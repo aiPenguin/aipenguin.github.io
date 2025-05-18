@@ -26,13 +26,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 domain: aipenguin.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://aipenguin.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /aipenguin.github.io/      # place folder name if the site is served in a subfolder
+baseurl: ""      # place folder name if the site is served in a subfolder
 github_username:  aiPenguin
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
