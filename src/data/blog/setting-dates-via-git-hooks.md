@@ -1,10 +1,11 @@
 ---
 author: Simon Smale
+draft: true
 pubDatetime: 2024-01-03T20:40:08Z
 modDatetime: 2024-01-08T18:59:05Z
 title: How to use Git Hooks to set Created and Modified Dates
 featured: false
-draft: false
+
 tags:
   - docs
   - FAQ
@@ -58,7 +59,7 @@ while read _ file; do
   fi
   if [ "$draft" = "first" ]; then
     echo "First release of $file, draft set to false and modDateTime removed"
-    cat $file | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime:/" | sed "/---.*/,/---.*/s/^draft:.*$/draft: false/" > tmp
+    cat $file | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime:/" | sed "/---.*/,/---.*/s/^draft:.*$//" > tmp
     mv tmp $file
     git add $file
   fi

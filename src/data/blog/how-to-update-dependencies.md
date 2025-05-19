@@ -1,10 +1,11 @@
 ---
 title: How to update dependencies of AstroPaper
 author: Sat Naing
+draft: true
 pubDatetime: 2023-07-20T15:33:05.569Z
 slug: how-to-update-dependencies
 featured: false
-draft: false
+
 ogImage: ../../assets/images/forrest-gump-quote.png
 tags:
   - FAQ
